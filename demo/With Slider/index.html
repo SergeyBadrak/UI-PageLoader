@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <link href="js/ui-page-loader/ui-page-loader.css" rel="stylesheet" type="text/css">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <title>Page Loader</title>
+  </head>
+  <body class="ui-page-loader">
+
+
+
+    <!--    Page Loader Wrappper    -->
+    <div class="ui-page-loader1">
+
+
+        <div class="container text-center">
+
+        <h1 class="mt-5">Page Loader JS</h1>
+        <h6 class="mb-5">With Slider and Animations</h6>
+
+              <div class="row justify-content-center main-slider">
+                  <div class="col-12 slider-item">
+                      <img class="img-fluid mb-3" src="images/adventure-alpine-cold-conifer-279455.jpg" alt="" width="" height="">
+
+                      <h1
+                          data-animation-in="zoomIn"
+                          data-delay-in="1.0"
+                          data-duration-in="1"
+                          data-animation-out="zoomOut"
+                          data-delay-out="5"
+                          data-duration-out="1"
+                          >Hello 1</h1>
+
+                  </div>
+                  <div class="col-12 slider-item">
+                      <img class="img-fluid mb-3" src="images/gray-asphalt-road-on-cliff-972391.jpg" alt="" width="" height="">
+                      <h1
+                          data-animation-in="zoomIn"
+                          data-delay-in="1.0"
+                          data-duration-in="1"
+                          data-animation-out="zoomOut"
+                          data-delay-out="5"
+                          data-duration-out="1"
+                          >Hello 2</h1>
+                  </div>
+                  <div class="col-12 slider-item">
+                      <img class="img-fluid mb-3" src="images/snow-covered-mountain-peak-1130847.jpg" alt="" width="" height="">
+                      <h1
+                          data-animation-in="zoomIn"
+                          data-delay-in="1.0"
+                          data-duration-in="1"
+                          data-animation-out="zoomOut"
+                          data-delay-out="5"
+                          data-duration-out="1"
+                          >Hello 3</h1>
+                  </div>
+
+
+
+              </div>
+
+        </div>
+
+
+    <!--    Page Loader Wrappper  End  -->
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+    <!-------------  Images Loaded Start ------------>
+    <!--https://imagesloaded.desandro.com      -->
+    <script src="js/ui-page-loader/imagesloaded.pkgd.min.js"></script>
+
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick-animation/slick-animation.js"></script>
+
+
+
+<!------------- Page Loader ------------>
+    <script src="js/ui-page-loader/ui-page-loader.js"></script>
+    <script type="text/javascript">
+
+        $().uiPpageLoader(
+            {
+// Set slector to show/hide page content
+                pageContainer: '.ui-page-loader',
+                animation: 'fade-in',
+                timeout: 0.0,
+
+// Set selector to waiting to load only part of page
+// Or leave EMPTY to load FULL page
+                objectToLoad: '.main-slider',
+
+                callback: function(){
+
+                 // alert("2");
+
+                    var sliderInit = $('.main-slider');
+
+                    sliderInit.slick({
+                        autoplay: true,
+    //                  speed: 0000,
+                        autoplaySpeed: 7900,
+    //                  fade: true,
+                        arrows: false,
+                        pauseOnFocus: false,
+                        pauseOnHover: false,
+                        draggable: false,
+                        swipe: false,
+                        dots: true
+                });
+
+                        sliderInit.slickAnimation();
+
+                    }
+            }
+        );
+
+    </script>
+<!------------- Page Loader ------------>
+
+  </body>
+</html>

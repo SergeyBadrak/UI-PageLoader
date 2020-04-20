@@ -1,0 +1,89 @@
+.ui-page-loader {
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: both;
+}
+.ui-page-loader-icon {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+    z-index: 100;
+
+    background-color: transparent;
+    border-top: 5px solid rgba(0, 0, 0, 0.2);
+    border-right: 5px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #eee;
+
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    transform: translateZ(0);
+    animation-duration: .75s;
+
+    animation-name: ui-page-loader-icon-animation;
+}
+
+
+.ui-page-loader-visible {
+    opacity: 1;
+}
+
+@keyframes ui-page-loader-icon-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.75s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.zoom-in {
+    animation-name: zoom-in;
+    animation-duration: 1.00s;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+.zoom-out {
+    animation-name: zoom-out;
+    animation-duration: 1.0s;
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
