@@ -59,14 +59,14 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 
 <h4>Преременные:</h4>
 
-<p><b>pageContainer:</b> - указывает на контейнер страницы</p>
-<p><b>animation:</b> - задаем еффект анимации при появлении страницы. По умолчанию доступно три: fade-in; zoom-in; zoom-out;
-Либо укажите свои (к примеру из библиотеки animate..css) </p>
-<p><b>timeout:</b> - задаем дополнительный timeout в секундах</p>
-<p><b>objectToLoad:</b> - задаем елемент страницы, после загрузки которого отобразится страница. Ожидается загрузка самого элемента и всех его изображений в том числе и фоновых. Удобно использовать для ожидания загрузки Sliders. <br />
+<p><b>pageContainer:</b> - set the page container</p>
+<p><b>animation:</b> - set the effect of the animation when the page appears. Three are available by default: fade-in; zoom-in; zoom-out;
+Or specify your own (for example, from the animate..css library) </p>
+<p><b>timeout:</b> - set the additional timeout in seconds</p>
+<p><b>objectToLoad:</b> - set the page element, after loading which the page will be displayed. It is awaiting to load the element itself and all its images, including background ones. It is convenient to use to wait for the loading of Sliders.<br />
 Для загрузки всей страницы оставте ее пустой.
 </p>
-<p><b>callback:</b> - Вызываем свою фунуцию после загрузки страницы. Например инициализируем слайдер </p>
+<p><b>callback:</b> - Call your function after loading the page. For example, initialize the slider </p>
 
 ```JS
 <script type="text/javascript">
