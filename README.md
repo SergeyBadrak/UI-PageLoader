@@ -1,4 +1,4 @@
-# UI-VideoPlayer-GAnalytics
+# UI-PageLoader
 Show HTML content after page (or part of page) loaded
 
 
