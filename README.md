@@ -67,7 +67,7 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 Для загрузки всей страницы оставте ее пустой.
 </p>
 <p><b>callback:</b> - Вызываем свою фунуцию после загрузки страницы. Например инициализируем слайдер <br />
-```JS 
+```HTML
  callback: function(){
 
     var sliderInit = $('.main-slider');
