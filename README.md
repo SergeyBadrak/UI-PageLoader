@@ -59,9 +59,9 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 
 <h4>Преременные:</h4>
 
-<b>pageContainer:</b> - указывает на контейнер страницы
-<h5>animation:</h5> - задаем еффект анимации при появлении страницы. Доступно три: fade-in; zoom-in; zoom-out;
-Либо укажите свои (к примеру из библиотеки animate..css) 
+<p><b>pageContainer:</b> - указывает на контейнер страницы</p>
+<p><b>animation:</b> - задаем еффект анимации при появлении страницы. Доступно три: fade-in; zoom-in; zoom-out;
+Либо укажите свои (к примеру из библиотеки animate..css) </p>
 
 
 
