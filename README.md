@@ -68,13 +68,31 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 </p>
 <p><b>callback:</b> - Вызываем свою фунуцию после загрузки страницы. Например инициализируем слайдер <br />
 ```HTML
- callback: function(){
+<script type="text/javascript">
 
-    var sliderInit = $('.main-slider');
+        $().uiPpageLoader(
+            {
+// Set slector to show/hide page content
+                pageContainer: '.ui-page-loader',
+                animation: 'fade-in',
+                timeout: 0.0,
 
-    sliderInit.slick({
-});
-    }
+// Set selector to waiting to load only part of page
+// Or leave EMPTY to load FULL page
+                objectToLoad: '.main-slider',
+
+                callback: function(){
+
+                    var sliderInit = $('.main-slider');
+
+                    sliderInit.slick({
+                        
+                });
+                    }
+            }
+        );
+
+    </script>
 ```     
 </p>
 
