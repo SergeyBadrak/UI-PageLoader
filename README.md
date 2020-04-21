@@ -55,7 +55,7 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 
 <h4>Set the .ui-page-loader class to body or another selector </h4>
 ```
-<body class="ui-page-loader"></body>
+< body class="ui-page-loader"></body >
 ```
 <h4>Преременные:</h4>
 
