@@ -53,12 +53,18 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 
 <h2>How to use</h2>
 
-<h4>Подключите код глобального тега Google Analytics</h4>
+<h4>Подключите класс .ui-page-loader к body либо другому селектору </h4>
 
-Для отслеживания действий по просмотру видео необходимо подключить код глобального тега Google Analytics <b>gtag</b>. 
-<p>Подробнее https://developers.google.com/analytics/devguides/collection/gtagjs/sending-data</p>
-<p>Данный скрипт работает с версией Google Analytics только на основе глобального тега. Если Вы используете счетчики Аналитики analytics.js, Вам необходимо перейти на версию с глобальным тегом.</p>
-Подробнее https://developers.google.com/analytics/devguides/collection/gtagjs/migration
+<body class="ui-page-loader">
+
+<h4>Преременные:</h4>
+
+<b>pageContainer:</b> - указывает на контейнер страницы
+animation: - задаем еффект анимации при появлении страницы. Доступно три: fade-in; zoom-in; zoom-out;
+Либо укажите свои (к примеру из библиотеки animate..css) 
+
+
+
 
 Примерный код глобального тега выглядит так:
 ```html
