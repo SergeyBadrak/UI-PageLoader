@@ -53,10 +53,10 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 
 <h2>How to use</h2>
 
-<h4>Подключите класс .ui-page-loader к body либо другому селектору </h4>
-
+<h4>Ыуе the .ui-page-loader class to body or another selector </h4>
+```HTML
 <body class="ui-page-loader">
-
+```
 <h4>Преременные:</h4>
 
 <p><b>pageContainer:</b> - set the page container</p>
