@@ -72,21 +72,13 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 
         $().uiPpageLoader(
             {
-// Set slector to show/hide page content
                 pageContainer: '.ui-page-loader',
                 animation: 'fade-in',
                 timeout: 0.0,
-
-// Set selector to waiting to load only part of page
-// Or leave EMPTY to load FULL page
                 objectToLoad: '.main-slider',
 
                 callback: function(){
-
-                    var sliderInit = $('.main-slider');
-
-                    sliderInit.slick({
-                        
+                     $('.main-slider').slick({   
                 });
                     }
             }
