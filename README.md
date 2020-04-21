@@ -10,7 +10,7 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 <ul>
 <li>jQuery library</li>
 <li>imagesLoaded Plugin  https://imagesloaded.desandro.com</li>
-<li>Optional: Slick Slider and Slick-Animation/li>
+<li>Optional: Slick Slider and Slick-Animation</li>
 </ul>
 
 
@@ -18,7 +18,7 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 
 1. Add CSS style in head
 ```HTML 
-<link href="js/ui-video-ganalytics/ui-video-ganalytics.css" rel="stylesheet" type="text/css">
+<link href="js/ui-page-loader/ui-page-loader.css" rel="stylesheet" type="text/css">
 ```
 2. Add jQuery library
 ```HTML 
@@ -27,21 +27,27 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
  
 3. Add JS after jQuery
 ```HTML 
- <script src="js/ui-video-ganalytics/ui-video-ganalytics.js"></script> 
+<script src="js/ui-page-loader/ui-page-loader.js"></script>
 ```  
 4. Initialise script
 ```JS 
-<script>
-    $(document).ready(function() { 
-  	$().uiPlayVideoGAnalytics(
+<script type="text/javascript">
+
+    $().uiPpageLoader(
         {
-            playBtn: "play_video",
-            hideBtn: "hide_video_btn",
-            sentToAnalytics: true
+// Set slector to show/hide page content
+            pageContainer: '.ui-page-loader',
+            animation: 'fade-in',
+            timeout: 0.0,
+
+// Set selector to waiting to load only part of page
+// Or leave EMPTY to load FULL page
+            objectToLoad: '',
+            callback: ""
         }
     );
-	});
-  </script>
+
+    </script>
   ``` 
 <p></p>
 
