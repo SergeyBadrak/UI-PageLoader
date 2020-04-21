@@ -57,7 +57,6 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 
 <h2>How to use</h2>
 
-<h4>Преременные:</h4>
 
 <p><b>pageContainer:</b> - set the page container</p>
 <p><b>animation:</b> - set the effect of the animation when the page appears. Three are available by default: fade-in; zoom-in; zoom-out;
