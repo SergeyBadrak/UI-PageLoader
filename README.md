@@ -64,7 +64,7 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 Or specify your own (for example, from the animate..css library) </p>
 <p><b>timeout:</b> - set the additional timeout in seconds</p>
 <p><b>objectToLoad:</b> - set the page element, after loading which the page will be displayed. It is awaiting to load the element itself and all its images, including background ones. It is convenient to use to wait for the loading of Sliders.<br />
-Для загрузки всей страницы оставте ее пустой.
+Leave empty to load the entire page.
 </p>
 <p><b>callback:</b> - Call your function after loading the page. For example, initialize the slider </p>
 
