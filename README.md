@@ -89,37 +89,3 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 ```     
 
 
-
-
-
-Примерный код глобального тега выглядит так:
-```html
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116704025-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-116704025-1');
-</script>
-```
-
-
-
-
-<h4>Video Player Example HTML code structure:</h4>
-
-```html
- <div class="col-12 col-lg-6 videos">
-     <a class="play_btn play_video" data-video-source="#video_1" href="#"></a>
-     <video id="video_1" title="video 1" preload="none" poster="images/poster-1.jpg">
-         <source src="video/1.mp4" type="video/mp4">
-     </video>
-     <h4>Video 1</h4>
- </div>
-```
-
-Set in <b>data-video-source</b> id of video to be played.
-
-
