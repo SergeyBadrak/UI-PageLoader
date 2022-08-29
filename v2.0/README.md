@@ -30,7 +30,7 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 <script src="js/ui-preloader/ui-preloader.js"></script>
 <script src="js/ui-preloader/ui-preloader-init.js"></script>
 ```  
-4. Insert Proloader code in the bottom of page
+4. Insert Preloader code in the bottom of the page
 ```HTML 
 <!-- Preloader code part -->
 <div class="ui-preloader">
@@ -43,13 +43,14 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 
 
 
-Or specify your own (for example, from the animate..css library) </p>
 <p><b>fadeOutDuration:</b> - Set fade Out duration to apear page content in ms</p>
 <p><b>timeout:</b> - Set additition timeout after page is loaded in seconds</p>
 <p><b>objectToLoad:</b> - set the page element, after loading which the page will be displayed. It is awaiting to load the element itself and all its images, including background ones. It is convenient to use to wait for the loading of Sliders.<br />
 Leave empty to load the entire page.
 </p>
 <p><b>callback:</b> - Call your function after loading the page. For example, initialize the slider </p>
+
+<h3>Example of init file:</h3>
 
 ```JS
 <script type="text/javascript">
