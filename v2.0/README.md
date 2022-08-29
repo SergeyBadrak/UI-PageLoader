@@ -53,13 +53,13 @@ Leave empty to load the entire page.
 <h3>Example of init file:</h3>
 
 ```JS
-<script type="text/javascript">
+(function ($) {
 
   $().uiPreloader(
     {
       //  Set fade Out duration to apear page content in ms
       fadeOutDuration: 350,
-      // Set additition timeout after page is loaded
+      // Set additition timeout after page loaded
       timeout: 1.0,
 
       // Set selector to waiting to load only part of page
@@ -72,7 +72,9 @@ Leave empty to load the entire page.
 
         sliderInit.slick({
             autoplay: true,
+//                  speed: 0000,
             autoplaySpeed: 7900,
+//                  fade: true,
             arrows: false,
             pauseOnFocus: false,
             pauseOnHover: false,
@@ -88,7 +90,9 @@ Leave empty to load the entire page.
     }
   );
 
-    </script>
+
+  
+}(jQuery));
 ```     
 
 

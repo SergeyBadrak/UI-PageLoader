@@ -9,7 +9,7 @@
 
       // Set selector to waiting to load only part of page
       // Or leave EMPTY to load FULL page
-      objectToLoad: '.loaded-content',
+      objectToLoad: '.main-slider',
 
       callback: function(){
 
