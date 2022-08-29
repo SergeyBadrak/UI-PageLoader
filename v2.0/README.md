@@ -50,7 +50,32 @@ Leave empty to load the entire page.
 </p>
 <p><b>callback:</b> - Call your function after loading the page. For example, initialize the slider </p>
 
-<h3>Example of init file:</h3>
+<h3>Example of simple init file:</h3>
+
+```JS
+(function ($) {
+
+  $().uiPreloader(
+    {
+      //  Set fade Out duration to apear page content in ms
+      fadeOutDuration: 350,
+      // Set additition timeout after page loaded
+      timeout: 1.0,
+
+      // Set selector to waiting to load only part of page
+      // Or leave EMPTY to load FULL page
+      objectToLoad: '.loaded-content',
+
+      callback: function(){
+        //  *****  Add CallBack code here 
+      }
+    }
+  );
+  
+}(jQuery));
+
+``` 
+<h3>Example of full init file:</h3>
 
 ```JS
 (function ($) {
