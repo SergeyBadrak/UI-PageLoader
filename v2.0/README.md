@@ -30,7 +30,7 @@ https://artium.com.ua/projects/UI-PageLoader/demo/
 <script src="js/ui-preloader/ui-preloader.js"></script>
 <script src="js/ui-preloader/ui-preloader-init.js"></script>
 ```  
-4. Insert Preloader code in the bottom of the page
+4. Insert Preloader code on the top of the page
 ```HTML 
 <!-- Preloader code part -->
 <div class="ui-preloader">
